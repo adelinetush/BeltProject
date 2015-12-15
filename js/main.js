@@ -1,6 +1,7 @@
 $(document).ready(function() {
     $('section#screenshots a').hover(function() {
         $('div#modal img').attr('src', $(this).attr('data-image-url') );
+        $("#modal").modal("show");       
     });
     
     var nav = $('.navbar-fixed-top');
