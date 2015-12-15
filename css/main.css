@@ -161,7 +161,9 @@ h2:after, h3:after {
     transition: 1s all ease;
 }
 .nav > li > a:hover {
-    background-color: #41031d;
+    background-color: transparent;
+    text-decoration: underline;
+    text-decoration-color: #41031d;
     
 }
 

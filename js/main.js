@@ -54,6 +54,6 @@ $(document).ready(function() {
 smoothScroll.init( {
     speed: 3000,
     easing: 'easeInOutQuad',
-    offset: 50
+    offset: 80
 
 });
