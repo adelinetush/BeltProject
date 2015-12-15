@@ -59,6 +59,8 @@ textarea {
 body {
     font-family: 'PT Sans', sans-serif;
 }
+
+/** CAREERS **/
 body#caree {
     background-image: url(../img/paralleximage.jpg);
     background-repeat: no-repeat; 
@@ -84,6 +86,8 @@ body .care {
     color: #ffffff;
     padding-right: 50px;
 }
+
+/** LANDING **/
 
 .hero {
     position: relative;
@@ -146,6 +150,8 @@ h2:after, h3:after {
 
 }
 
+/** NAVBAR **/
+
 .navbar-default {
     box-shadow: none;
     background-color: transparent;
@@ -177,6 +183,8 @@ h2:after, h3:after {
     
 
 }
+
+/** CIRCLES**/
 
 .blue-circle {
     width: 100%;
@@ -216,6 +224,7 @@ h2:after, h3:after {
 }
 
 
+/** ABOUT SECTION **/
 section#about .one {
     padding-bottom: 80px;
 }
@@ -224,6 +233,8 @@ section#about .two {
     padding-bottom: 40px;
 }
 
+
+/** SERVICES **/
 #services .blue-circle {
     width: 25%;
     padding-bottom: 25%;
@@ -235,14 +246,48 @@ section#services .three {
 
 /** SCREENSHOTS **/
 
+.screenshots {
+    background-color: #efebea;
+    padding-top: 0;
+    padding-bottom: 0;
+}
 
-
+.screenshots ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
 .nopadding {
     padding: 0 !important;
     margin: 0 !important;
 
 }
 
+.screenshots ul li {
+    margin-left: 0;
+    margin-right: 0;
+    min-height: 100%;
+    width: 100%;
+    list-style: none;
+}
+
+
+.screenshots figure {
+    position: relative;
+    overflow: hidden;
+}
+.screenshots figure img {
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+.screenshots figure:hover img, .screenshots figure:focus img {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
 .screenshots figcaption {
     position: absolute;
     top: 0;
@@ -250,12 +295,57 @@ section#services .three {
     padding: 25% 0;
     width: 100%;
     height: 100%;
-
+    background-color: rgba(93, 90, 111, 0.75);
+    text-align: center;
+    font-size: 15px;
+    opacity: 0;
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
 }
 .screenshots figcaption a {
     color: #fff
 }
+.screenshots figcaption a:hover, .screenshots figcaption a:focus {
+    color: #73d0da
+}
+.screenshots figure:hover figcaption, .screenshots figure:focus figcaption {
+    opacity: 1
+}
+.visible {
+    opacity: 1
+}
+.screenshots figure.cs-hover figcaption {
+    opacity: 1
+}
+.screenshots figcaption i {
+    font-size: 35px
+}
+.screenshots figcaption p {
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.screenshots figcaption .caption-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -40px;
+    margin-left: -100px;
+    width: 200px;
+    -webkit-transform: translate(0px, 15px);
+    -ms-transform: translate(0px, 15px);
+    transform: translate(0px, 15px);
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+.screenshots figure:hover figcaption .caption-content, .screenshots figure:focus figcaption .caption-content {
+    -webkit-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+}
 
+
+/** SERVICES **/
 
 section#services {
     background-color: #f5f5f5;
@@ -394,6 +484,8 @@ section#contact input, section#contact textarea {
     color: #ffffff;
 }
 
+/** CONTACT **/
+
 section#contact textarea {
     min-height: 200px;
 
@@ -406,6 +498,8 @@ section#contact input.btn {
     font-size: 1.4em;
     color: #1a3d61;
 }
+
+/** FOOTER **/
 
 footer {
     background-color: #41031d; 
