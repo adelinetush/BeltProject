@@ -357,32 +357,62 @@
         
         <!-- Contact -->
         <section id="contact" class="contact">
-            <p>Contact NL</p>
-                
-            <address>
-                Prins Hendricklaan 7, Zeist, The Netherlands<br>
-                <a class="mail" href="mailto:#">info@bellt.nl</a><br>
-                030 69 22 758<br>
-                7Route link<br>
-            </address>
             
-            <p>Contact BE</p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 address">
+                        <div class="col-md-4">
+                            <h1>Contact NL</h1>
+                            <div>
+                            Prins Hendricklaan 7, Zeist, The Netherlands<br />
+                            <a class="mail" href="mailto:#">info@bellt.nl</a><br>
+                            030 69 22 758<br />
+                            7Route link<br />
+                            </div>
+                            <hr />
+
+                        </div>
+                        <div id="map1" class="col-md-8 map"></div>
+                    </div>
+                        
+                    </div>
                 
-            <address>
-                Prins Hendricklaan 7, Zeist, The Netherlands<br>
-                <a class="mail" href="mailto:#">info@bellt.nl</a> <br>
-                030 69 22 758<br>
-                7Route link<br>
-            </address>
-            
-            <p>Contact ES</p>
+                <div class="row">
+                    <div class="col-md-12 address">
+                        <div class="col-md-4">
+                            <h1>Contact BE</h1>
+                            <div>
+                            Prins Hendricklaan 7, Zeist, The Netherlands<br />
+                            <a class="mail" href="mailto:#">info@bellt.nl</a><br>
+                            030 69 22 758<br />
+                            7Route link<br />
+                            </div>
+                            <hr />
+
+                        </div>
+                        <div id="map2" class="col-md-8 map"></div>
+                    </div>
+                        
+                    </div>
                 
-            <address>
-                Prins Hendricklaan 7, Zeist, The Netherlands<br>
-                <a class="mail" href="mailto:#">info@bellt.nl</a> <br>
-                030 69 22 758<br>
-                7Route link<br>
-            </address>
+                <div class="row">
+                    <div class="col-md-12 address">
+                        <div class="col-md-4">
+                            <h1>Contact ES</h1>
+                            <div>
+                            Prins Hendricklaan 7, Zeist, The Netherlands<br />
+                            <a class="mail" href="mailto:#">info@bellt.nl</a><br>
+                            030 69 22 758<br />
+                            7Route link<br />
+                            </div>
+                            <hr />
+
+                        </div>
+                        <div id="map3" class="col-md-8 map"></div>
+                    </div>
+                        
+                    </div>
+            </div> <!--- contact container -->
         </section>
         
          <!-- Footer -->
@@ -402,5 +432,28 @@
         <script src="js/jquery.waypoints.min.js"></script>
 
         <script src="js/main.js"></script>
+        
+        <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+
+        <script type="text/javascript">
+            jQuery(function ($) {
+                function init_map1() {
+                    var myLocation = new google.maps.LatLng(52.087079, 5.248782);
+                    var mapOptions = {
+                        center: myLocation,
+                        zoom: 16
+                    };
+                    var marker = new google.maps.Marker({
+                        position: myLocation,
+                        title: "NL"
+                    });
+                    var map = new google.maps.Map(document.getElementById("map1"),
+                        mapOptions);
+                    marker.setMap(map);
+                }
+                init_map1();
+            });
+        </script>
+        
     </body>
 </html>

@@ -488,6 +488,10 @@ section#contact input.btn {
     color: #1a3d61;
 }
 
+.address {
+    color: #ffffff;
+}
+
 /** FOOTER **/
 
 footer {
@@ -536,7 +540,24 @@ footer p {
     -moz-animation-delay: .9s;
     -webkit-animation-delay: .9s;
 }
- 
+
+
+.map {
+    min-height: 250px;
+    height: 100%;
+}
+
+#map1 {
+    padding: 20px; 
+    border: 2px solid #ccc; 
+    margin-bottom: 10px; 
+    background-color:#fff;
+}
+
+
+
+
+
 /* ==========================================================================
    Media Queries
    ========================================================================== */
