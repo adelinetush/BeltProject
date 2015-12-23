@@ -212,6 +212,7 @@ h2:after, h3:after {
 
 }
 
+
 .blue-circle div {
     float: left;
     width: 100%;
@@ -220,6 +221,12 @@ h2:after, h3:after {
     margin-top: -0.5em;
     text-align: center;
     color: #ffffff;
+}
+
+.redcircle {
+    padding-left: 30%;
+    padding-bottom: 20px;
+    padding-top: 10px;
 }
 
 .blue-circle div i {
