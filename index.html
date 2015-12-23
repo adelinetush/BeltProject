@@ -79,7 +79,7 @@
                             <div class="col-md-4">
 
                                 <div class="redcircle">
-                                    <img src="img/redcircle.png">
+                                    <img src="img/p2b1.png">
                                 </div>
                                 <h3 class="text-uppercase text-center"> iOS, Android and Windows </h3>
                                 <p class="text-center"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. </p>
@@ -444,10 +444,10 @@
         <script type="text/javascript">
             jQuery(function ($) {
                 function init_map1() {
-                    var myLocation = new google.maps.LatLng(52.087079, 5.248782);
+                    var myLocation = new google.maps.LatLng(52.086789, 5.248467);
                     var mapOptions = {
                         center: myLocation,
-                        zoom: 16
+                        zoom: 10
                     };
                     var marker = new google.maps.Marker({
                         position: myLocation,
@@ -460,6 +460,46 @@
                 init_map1();
             });
         </script>
+			
+	    <script type="text/javascript">
+	            jQuery(function ($) {
+	                function init_map2() {
+	                    var myLocation = new google.maps.LatLng(51.237621, 4.597530);
+	                    var mapOptions = {
+	                        center: myLocation,
+	                        zoom: 10
+	                    };
+	                    var marker = new google.maps.Marker({
+	                        position: myLocation,
+	                        title: "BE"
+	                    });
+	                    var map = new google.maps.Map(document.getElementById("map2"),
+	                        mapOptions);
+	                    marker.setMap(map);
+	                }
+	                init_map2();
+	            });
+	    </script>
+				
+	    <script type="text/javascript">
+	            jQuery(function ($) {
+	                function init_map3() {
+	                    var myLocation = new google.maps.LatLng(40.450953, -3.694442);
+	                    var mapOptions = {
+	                        center: myLocation,
+	                        zoom: 10
+	                    };
+	                    var marker = new google.maps.Marker({
+	                        position: myLocation,
+	                        title: "ES"
+	                    });
+	                    var map = new google.maps.Map(document.getElementById("map3"),
+	                        mapOptions);
+	                    marker.setMap(map);
+	                }
+	                init_map3();
+	            });
+	    </script>		
         
     </body>
 </html>
