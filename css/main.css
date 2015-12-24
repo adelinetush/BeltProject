@@ -79,7 +79,7 @@ body#caree {
     padding-bottom: 20px;
 }
 .xls {
-    padding-top: 370px;
+    padding-top: 43%;
     padding-bottom: 20px;
 }
 
@@ -102,8 +102,7 @@ body .care {
 }
 
 .hero h1 {
-    margin: 450px 0 45px 0;
-    padding-bottom: 50px 0px;
+    margin-top: 50%;
     font-size: 20px;
 }
 .well {
