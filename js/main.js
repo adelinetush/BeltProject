@@ -29,8 +29,8 @@ $(document).ready(function() {
 		offset: '75%'
 	});
     
-    $('#about .blue-circle').waypoint (function() {
-        $('#about .blue-circle').addClass('animated fadeInUp')
+    $('#about .redcircle').waypoint (function() {
+        $('#about .redcircle').addClass('animated fadeInUp')
     }, {
         offset: '75%'
     }) ;
@@ -54,6 +54,6 @@ $(document).ready(function() {
 smoothScroll.init( {
     speed: 3000,
     easing: 'easeInOutQuad',
-    offset: 80
+    offset: 50
 
 });
