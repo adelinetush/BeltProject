@@ -143,13 +143,20 @@ h4 {
 h5 {
     margin-bottom: 0px;
     font-size: 2.5em;
+    color: #fff;
 
 }
 h6 {
     margin-bottom: 0px;
     font-size: 2em;
-
+    color: #fff
 }
+
+.view-first .well:hover {
+    margin-top: -3%;
+    
+}
+
 
 h2:after, h3:after {
     content: "";
@@ -207,6 +214,10 @@ h2:after, h3:after {
     padding-top: 0;
     
 
+}
+
+.effect .nav-justified {
+    margin-top: 0.9%;
 }
 
 /** CIRCLES**/
@@ -325,13 +336,36 @@ section#services .three {
     height: 100%;
     
 }
-.screenshots figcaption a {
-    color: #fff
-}
 
 .screenshots figure:hover .well, .screenshots figure:focus .well {
-    opacity: 0
+    -webkit-transform: translateY(-200%);
+   -moz-transform: translateY(-200%);
+   -o-transform: translateY(-200%);
+   -ms-transform: translateY(-200%);
+   transform: translateY(-200%);
+    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+   filter: alpha(opacity=100);
+    opacity: 1;
+   -webkit-transition: all 0.3s ease-in-out;
+   -moz-transition: all 0.3s ease-in-out;
+   -o-transition: all 0.3s ease-in-out;
+   -ms-transition: all 0.3s ease-in-out;
+   transition: all 0.3s ease-in-out;
 }  
+
+.view-first .well {
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+   filter: alpha(opacity=0);
+   opacity: 1;
+   color: #fff;
+   -webkit-transition: all 0.3s linear;
+   -moz-transition: all 0.3s linear;
+   -o-transition: all 0.3s linear;
+   -ms-transition: all 0.3s linear;
+   transition: all 0.3s linear;
+}
+
+
 
 .visible {
     opacity: 1
@@ -620,10 +654,8 @@ footer p {
 }
 .view-first h1 {
     text-align: center;
-   color: #fff;
-   -webkit-box-shadow: 0px 1px 3px rgba(159, 141, 140, 0.5);
-   -moz-box-shadow: 0px 1px 3px rgba(159, 141, 140, 0.5);
-   box-shadow: 0px 1px 3px rgba(159, 141, 140, 0.5);
+    color: #fff;
+   
 }
 .view-first p {
    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -643,6 +675,8 @@ footer p {
    -ms-transform: translateY(0px);
    transform: translateY(0px);
 }
+
+
 
 /** 
 .view-first:hover img {
@@ -770,22 +804,7 @@ footer p {
    padding: 10px 20px 20px;
    text-align: center;
 }
-.view a.info {
-   display: inline-block;
-   text-decoration: none;
-   padding: 7px 14px;
-   background: #000;
-   color: #fff;
-   text-transform: uppercase;
-   -webkit-box-shadow: 0 0 1px #000;
-   -moz-box-shadow: 0 0 1px #000;
-   box-shadow: 0 0 1px #000;
-}
-.view a.info: hover {
-   -webkit-box-shadow: 0 0 5px #000;
-   -moz-box-shadow: 0 0 5px #000;
-   box-shadow: 0 0 5px #000;
-}
+
 				
 
 
@@ -800,6 +819,9 @@ footer p {
     .navbar-collapse.in, .collapsing {
         background-color: #925E6C;
     }
+    .view-first .well {
+        margin-top: -10%;
+}
 
 }
 @media(min-width: 768px) {}
