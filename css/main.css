@@ -196,8 +196,7 @@ h2:after, h3:after {
 }
 
 .nav >li > a {
-    color: #cd0038;
-    
+    color: #cd0038; 
 }
 
 .nav > li.active {
@@ -682,6 +681,7 @@ footer p {
 
 
 /** 
+<<<<<<< HEAD
 .view-first:hover img {
    -webkit-transform: translateY(-100%);
    -moz-transform: translateY(-100%);
@@ -692,6 +692,8 @@ footer p {
 
 **/   ----------> /** UNCOMMENT THIS IF YOU WANT TO PUSH THE FIRST IMAGE UP AS WELL **/
 
+=======
+>>>>>>> origin/master
 .view-first:hover img {
    -webkit-transform: translateY(-100%);
    -moz-transform: translateY(-100%);
@@ -700,6 +702,19 @@ footer p {
    transform: translateY(-100%);
 }
 
+<<<<<<< HEAD
+=======
+**/   ----------> /** UNCOMMENT THIS IF YOU WANT TO PUSH THE FIRST IMAGE UP AS WELL **/
+
+.view-first:hover img {
+   -webkit-transform: translateY(-100%);
+   -moz-transform: translateY(-100%);
+   -o-transform: translateY(-100%);
+   -ms-transform: translateY(-100%);
+   transform: translateY(-100%);
+}
+
+>>>>>>> origin/master
 .view-first:hover p {
    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
    filter: alpha(opacity=100);
